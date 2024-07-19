@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B5F7E3E62C45811C00D00D48 /* AvatarSelectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7E3E52C45811C00D00D48 /* AvatarSelectApp.swift */; };
-		B5F7E3E82C45811C00D00D48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7E3E72C45811C00D00D48 /* ContentView.swift */; };
+		B5F7E3E82C45811C00D00D48 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7E3E72C45811C00D00D48 /* AvatarView.swift */; };
 		B5F7E3EA2C45812200D00D48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F7E3E92C45812200D00D48 /* Assets.xcassets */; };
 		B5F7E3ED2C45812200D00D48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F7E3EC2C45812200D00D48 /* Preview Assets.xcassets */; };
+		B5F7E3F92C458A7000D00D48 /* PHPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7E3F82C458A7000D00D48 /* PHPicker.swift */; };
+		B5F7E3FC2C45903900D00D48 /* AccessCameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7E3FB2C45903900D00D48 /* AccessCameraManager.swift */; };
+		B5F7E4032C495D6300D00D48 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7E4022C495D6300D00D48 /* CameraPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5F7E3E22C45811C00D00D48 /* AvatarSelect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvatarSelect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F7E3E52C45811C00D00D48 /* AvatarSelectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelectApp.swift; sourceTree = "<group>"; };
-		B5F7E3E72C45811C00D00D48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5F7E3E72C45811C00D00D48 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		B5F7E3E92C45812200D00D48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F7E3EC2C45812200D00D48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5F7E3F82C458A7000D00D48 /* PHPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPicker.swift; sourceTree = "<group>"; };
+		B5F7E3FB2C45903900D00D48 /* AccessCameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraManager.swift; sourceTree = "<group>"; };
+		B5F7E4012C465BC400D00D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B5F7E4022C495D6300D00D48 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +58,12 @@
 		B5F7E3E42C45811C00D00D48 /* AvatarSelect */ = {
 			isa = PBXGroup;
 			children = (
+				B5F7E4012C465BC400D00D48 /* Info.plist */,
 				B5F7E3E52C45811C00D00D48 /* AvatarSelectApp.swift */,
-				B5F7E3E72C45811C00D00D48 /* ContentView.swift */,
-				B5F7E3E92C45812200D00D48 /* Assets.xcassets */,
+				B5F7E3F32C45848F00D00D48 /* Views */,
+				B5F7E3F52C4584FB00D00D48 /* Representables */,
+				B5F7E3FA2C45901000D00D48 /* Services */,
+				B5F7E3F42C4584CC00D00D48 /* Resources */,
 				B5F7E3EB2C45812200D00D48 /* Preview Content */,
 			);
 			path = AvatarSelect;
@@ -65,6 +75,39 @@
 				B5F7E3EC2C45812200D00D48 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5F7E3F32C45848F00D00D48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5F7E3E72C45811C00D00D48 /* AvatarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5F7E3F42C4584CC00D00D48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5F7E3E92C45812200D00D48 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5F7E3F52C4584FB00D00D48 /* Representables */ = {
+			isa = PBXGroup;
+			children = (
+				B5F7E3F82C458A7000D00D48 /* PHPicker.swift */,
+				B5F7E4022C495D6300D00D48 /* CameraPicker.swift */,
+			);
+			path = Representables;
+			sourceTree = "<group>";
+		};
+		B5F7E3FA2C45901000D00D48 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5F7E3FB2C45903900D00D48 /* AccessCameraManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5F7E3E82C45811C00D00D48 /* ContentView.swift in Sources */,
+				B5F7E3E82C45811C00D00D48 /* AvatarView.swift in Sources */,
+				B5F7E3F92C458A7000D00D48 /* PHPicker.swift in Sources */,
+				B5F7E4032C495D6300D00D48 /* CameraPicker.swift in Sources */,
+				B5F7E3FC2C45903900D00D48 /* AccessCameraManager.swift in Sources */,
 				B5F7E3E62C45811C00D00D48 /* AvatarSelectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +321,8 @@
 				DEVELOPMENT_TEAM = 3CCNFR9RJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AvatarSelect/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera so you can select images for your avatar.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +352,8 @@
 				DEVELOPMENT_TEAM = 3CCNFR9RJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AvatarSelect/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera so you can select images for your avatar.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
